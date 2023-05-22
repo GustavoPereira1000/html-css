@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: 'hamburguer';
+    src: url('../fontes/McDonalds-Regular.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+    --cor1: #EE7F47;
+    --cor2: #EB4E00;
+    --cor3: #B73D00;
+    --cor4: #6B3920;
+    --cor5: #6B2400;
+
+
+    --fonte-hamburguer: 'hamburguer', cursive;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+   background-color: var(--cor1);
+}
+
+
+
+header {
+
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+
+}
+
+header > h1 {
+
+    font-family: var(--fonte-hamburguer);
+    font-size: 1.5em;
+    color: white;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 10px  rgba(255, 255, 255, 0.123);
+}
+
+header  p {
+
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 20px 0px 15px 0px;
+   padding: 5px;
+   font-size: 1.2em;
+   font-weight: bold;
+   text-shadow: 3px 3px 10px  rgba(255, 255, 255, 0.123);
+}
+
+
+
+nav {
+
+    background-color: var(--cor4);
+    padding: 8px;
+
+}
+
+nav > a {
+
+        font-family: var(--fonte-padrao);
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+
+nav > a:hover {
+
+background-color: var(--cor2);
+padding: 4px;
+border-radius: 15px;
+
+}
+
+main > article > picture > img {
+    
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+section {
+
+    background-color: var(--cor5);
+    max-width: 650px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor1);
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.616);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.432);
+
+    display: block;
+   margin: auto;
+}
+
+section > p {
+    text-align: justify;
+}
+

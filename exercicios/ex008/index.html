@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+
+
+    <style>
+        mark {
+
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+   <br>
+    <h1 style="text-align: center;"><ins>Principais Formatações do HTML:</ins></h1>
+    <br>
+        <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>Termo em negrito</b> usando a tag &lt;b&gt; (nao semantico), apenas forma.</p>
+    <p>Nesta frase, tenho um <strong>Termo em Destaque</strong> usando a tag &lt;STRONG&gt; (semântica).</p>
+
+        <h2>Itálico / Ênfase</h2>
+<p>Nesta frase, temos um <i>Termo em Itálico</i> usando a tag &lt;I&gt; (não semântica).</p>
+<p>Nesta frase, temos um <em>Termo em Itálico</em> usando a tag &lt;EM&gt; (semântica).</p> 
+
+    <h2>Texto Marcado</h2>
+<p>Podemos criar um <mark>texto marcado</mark> usando &lt;MARK&gt;</p>
+<p>Podemos também <mark>criar uma marcação</mark> com todas as marcações da mesma cor, utilizando o CSS no &lt;head&gt;. Pois com isso, irá selecionar todos da mesma cor. Como no código:
+
+    <pre>
+            <code>
+                &lt;head&gt;
+                &lt;style&gt;
+                    mark {
+                        background-color: blue;
+                    }
+                &lt;/style&gt;
+                &lt;/head&gt;
+            </code>
+        </p>
+    </pre>
+
+
+<p>Podemos criar também um <mark style="background-color: crimson;">texto marcado de forma individual</mark> usando &lt;mark style="background-color: + a cor em código hexadecimal </p>
+
+    <h2>Texto Deletado</h2>
+<p>Podemos <del>marcar um texto</del> e como inserido para dar uma ênfase e indicar que ele foi adicionado depois</p>
+
+    <h2>Texto Inserido</h2>
+<p>Podemos marcar um <ins>texto como inserido </ins>para dar uma ênfase e indicar que ele foi adicionado depois. Com a tag &lt;ins&gt; (semântico)</p>
+<p>Existe também o<u> sublinhado</u> com a tag &lt;U&gt; (não semântico)</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas como: x<sup>20</sup> + 3. Com a tag &lt;sup&gt;</p>
+
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo: H<sub>2</sub>O. Com a tag &lt;sub&gt;</p>
+    
+    <h2>Texto Grande e Pequeno</h2>
+    
+        <P><big>Texto GRANDE</big> <!-- A tag big não é mais usual para o HTML, se tornando obsoleta-->  e Texto <small> pequeno</small></p> <!-- Sendo ainda semãntica (usual)-->
+   
+            
+</body>
+</html>

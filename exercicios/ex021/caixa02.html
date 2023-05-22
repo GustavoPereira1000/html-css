@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(206, 203, 200);
+    }
+
+
+    header {
+       
+        /* width: fit-content; <-- recorta o fundo da largura do texto*/ 
+
+        background-color: white;
+        padding: 5px;
+        margin:10px;
+    }
+    
+    nav {
+    
+        background-color: gray;
+        padding: 3px;
+        box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.425);
+    }
+    
+    nav >a {
+    
+        text-decoration: underline;
+        color: white;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+    
+    nav > a:hover {
+    
+        text-decoration: none;
+        margin-right: 30px;
+    }
+
+    main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px 0px;
+
+}
+
+    main > p {
+    display: inline;
+    padding: 3px;
+    margin: 3px;
+
+}
+
+    article {
+    background-color: lightgray;
+    padding: 0.5px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+
+
+section >article >h1 {
+    text-align: center;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+
+
+
+    footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 0px;
+}
+ 
+   
+    p {
+    text-align: center;
+
+ }
+
+ 
+ .artigo {
+
+    background-color: rgba(163, 159, 159, 0.637);
+    width: fit-content;
+    padding-left: 10px;
+}
+
+
+footer > p {
+
+    margin: 0px;
+}
+
+#bola {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+</style>
+
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+<nav>
+   <a href="">Link</a>
+   <a href="">Link</a>
+   <a href="">Link</a>
+   <a href="">Link</a>
+   <a href="">Link</a>
+</nav>
+    </header>
+
+
+    <main class="topicos">
+
+        <head>
+            <p>Esportes</p>
+            <p>Saúde</p>
+            <p>Tecnologia</p>
+        </head>
+    <section id="assuntos">
+   
+        <article>
+        
+            <h1>Noticia sobre o Brasil</h1>
+
+            <aside>
+  
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam est natus possimus porro eius sed dolor oluta, iusto, facere eos aliquam culpa repudiandae voluptates enim quis animi unde placeat magnam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                
+                <p class="artigo">Artigo escrito por Joao Silva</p>
+                
+            </aside>
+            
+        </article>
+        
+    </section>
+    
+    
+</main>
+
+<footer>
+    
+    <p>Desenvolvido pelo CursoemVideo</p>
+    
+   
+</footer>
+
+<div id="bola"></div>
+
+</body>
+
+</html>
