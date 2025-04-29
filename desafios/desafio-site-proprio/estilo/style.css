@@ -1,127 +1,91 @@
-@charset "UTF-8";
-
-
-
-@font-face {
-    font-family: 'hamburguer';
-    src: url('../fontes/McDonalds-Regular.otf') format('opentype');
-    font-weight: normal;
-
-}
-
+/* Reset básico */
 * {
-
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root {
-
-    --cor1: #EE7F47;
-    --cor2: #EB4E00;
-    --cor3: #B73D00;
-    --cor4: #6B3920;
-    --cor5: #6B2400;
-
-
-    --fonte-hamburguer: 'hamburguer', cursive;
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-}
-
-
-
+/* Fonte geral e padding */
 body {
-   background-color: var(--cor1);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
 }
 
-
-
+/* Cabeçalho */
 header {
-
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    min-height: 100px;
     text-align: center;
-    padding-top: 30px;
-    text-align: center;
-    padding-bottom: 15px;
-    color: white;
-
+    padding: 20px 10px;
+    background-color: #f5f5f5;
 }
 
-header > h1 {
-
-    font-family: var(--fonte-hamburguer);
-    font-size: 1.5em;
-    color: white;
-
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-shadow: 3px 3px 10px  rgba(255, 255, 255, 0.123);
+header h1 {
+    font-size: 2rem;
 }
 
-header  p {
-
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   margin: 20px 0px 15px 0px;
-   padding: 5px;
-   font-size: 1.2em;
-   font-weight: bold;
-   text-shadow: 3px 3px 10px  rgba(255, 255, 255, 0.123);
+header p {
+    font-size: 1rem;
+    color: #555;
 }
 
-
-
+/* Navegação */
 nav {
-
-    background-color: var(--cor4);
-    padding: 8px;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
 }
 
-nav > a {
-
-        font-family: var(--fonte-padrao);
+nav a {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
-    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-
-nav > a:hover {
-
-background-color: var(--cor2);
-padding: 4px;
-border-radius: 15px;
-
+nav a:hover {
+    background-color: #555;
 }
 
-main > article > picture > img {
-    
+/* Imagem responsiva */
+picture img {
+    width: 100%;
+    height: auto;
     display: block;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 
-
-section {
-
-    background-color: var(--cor5);
-    max-width: 650px;
-    padding: 20px;
-    text-align: center;
-    font-family: var(--fonte-padrao);
-    color: var(--cor1);
-    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.616);
-    border-radius: 0px 0px 15px 15px;
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.432);
-
-    display: block;
-   margin: auto;
+/* Texto */
+main {
+    padding: 10px;
 }
 
-section > p {
+section p {
+    font-size: 1rem;
     text-align: justify;
 }
 
+/* Responsivo para telas pequenas */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
